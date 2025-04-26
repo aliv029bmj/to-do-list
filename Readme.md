@@ -1,7 +1,3 @@
-Tabii! Aşağıda sənə **tam bir çıxış dosyası** formatında yazdım, sanki hazır bir `README.md` sənədi kimi. Sən bunu birbaşa kopyalayıb `.md` dosyasına yapışdırıb istifadə edə bilərsən:
-
----
-
 # 📋 To-Do List
 
 A simple and functional task management application. The backend is built with Spring Boot (REST API), and the frontend is developed using HTML, CSS, and JavaScript. The PostgreSQL database runs inside a Docker container.
