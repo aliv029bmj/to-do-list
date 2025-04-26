@@ -101,6 +101,12 @@ Then open the provided URL in your browser (e.g., `http://localhost:8080`).
 
 ---
 
+## 🌐 API Documentation
+Access the API documentation at: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+
+
+---
+
 ## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
