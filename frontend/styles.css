@@ -27,12 +27,26 @@ h1 {
     margin-bottom: 20px;
 }
 
-#taskInput {
+#taskInput, #searchInput {
     flex: 1;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     font-size: 16px;
+}
+
+#categoryInput, #categoryFilter {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.filter-section {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
 }
 
 button {
@@ -67,6 +81,20 @@ li {
 li.completed {
     background-color: #e0e0e0;
     text-decoration: line-through;
+}
+
+li .category {
+    display: block;
+    color: #007BFF;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+li .date {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 li button {
