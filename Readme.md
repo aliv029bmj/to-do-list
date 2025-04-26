@@ -93,11 +93,11 @@ Then open the provided URL in your browser (e.g., `http://localhost:8080`).
 
 ---
 
-## 📸 Screenshot
+## 📸 Screenshots
 
-![](screenshots/Ekran Görüntüsü - 2025-04-26 12-19-08.png)
-
-*(Insert a screenshot of your application here)*
+| To Do List Ui |
+|-------------|
+| ![](screenshots/todolist.png) |
 
 ---
 
