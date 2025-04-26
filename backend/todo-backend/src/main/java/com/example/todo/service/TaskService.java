@@ -18,6 +18,18 @@ public class TaskService {
         return taskRepository.findAll();
     }
 
+    public List<Task> getTasksByCategory(String category) {
+        return taskRepository.findAll().stream()
+                .filter(task -> task.getCategory() != null && task.getCategory().equalsIgnoreCase(category))
+                .toList();
+    }
+
+    public List<Task> searchTasks(String keyword) {
+        return taskRepository.findAll().stream()
+                .filter(task -> task.getDescription().toLowerCase().contains(keyword.toLowerCase()))
+                .toList();
+    }
+
     public Task createTask(Task task) {
         return taskRepository.save(task);
     }
@@ -28,6 +40,7 @@ public class TaskService {
             Task task = optionalTask.get();
             task.setDescription(taskDetails.getDescription());
             task.setCompleted(taskDetails.isCompleted());
+            task.setCategory(taskDetails.getCategory());
             return taskRepository.save(task);
         }
         return null;

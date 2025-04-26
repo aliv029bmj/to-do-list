@@ -20,6 +20,16 @@ public class TaskController {
         return taskService.getAllTasks();
     }
 
+    @GetMapping("/category/{category}")
+    public List<Task> getTasksByCategory(@PathVariable String category) {
+        return taskService.getTasksByCategory(category);
+    }
+
+    @GetMapping("/search")
+    public List<Task> searchTasks(@RequestParam String keyword) {
+        return taskService.searchTasks(keyword);
+    }
+
     @PostMapping
     public Task createTask(@RequestBody Task task) {
         return taskService.createTask(task);
